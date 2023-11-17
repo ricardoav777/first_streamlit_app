@@ -42,8 +42,7 @@ try:
   else:
     back_from_function = get_fruityvice_data(fruit_choice)
     # convert normal text into a dataframe
-    streamlit.dataframe(fruityvice_normalized)
-    
+    streamlit.dataframe(back_from_function)
 except URLError as e:
   streamlit.error()
   
