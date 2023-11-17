@@ -29,7 +29,7 @@ streamlit.write('The user entered ', fruit_choice)
 
 import requests
 
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 
 # converts json format into normal text
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
